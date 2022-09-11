@@ -1,0 +1,260 @@
+{
+    "wallets": [
+        {
+            "id": 1,
+            "title": "Metamask",
+            "picture": "metamask.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Coinbase",
+            "picture": "coinbase.svg"
+        },
+        {
+            "id": 3,
+            "title": "imToken",
+            "picture": "imToken.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Trust",
+            "picture": "trust.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Rainbow",
+            "picture": "rainbow.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Wallet.io",
+            "picture": "Walletio.jpg"
+        }
+        ,
+        {
+            "id": 7,
+            "title": "ZelCore",
+            "picture": "zelCore.jpg"
+        }
+        ,
+        {
+            "id": 8,
+            "title": "Aktionariat",
+            "picture": "Aktionariat.jpg"
+        }
+        ,
+        {
+            "id": 9,
+            "title": "Anchor",
+            "picture": "Anchor.jpg"
+        }
+        ,
+        {
+            "id": 10,
+            "title": "Atomic",
+            "picture": "Atomic.jpg"
+        },
+        {
+            "id": 11,
+            "title": "Authereum",
+            "picture": "Authereum.jpg"
+        }
+        ,
+        {
+            "id": 12,
+            "title": "BitPay",
+            "picture": "BitPay.jpg"
+        }
+        ,
+        {
+            "id": 13,
+            "title": "Blockchain",
+            "picture": "blockchain.jpg"
+        }
+        ,
+        {
+            "id": 14,
+            "title": "Binance",
+            "picture": "binance.jpg"
+        }
+        ,
+        {
+            "id": 15,
+            "title": "Coin98",
+            "picture": "coin98.jpg"
+        }
+        ,
+        {
+            "id": 16,
+            "title": "Crypto.com",
+            "picture": "cryptocom.jpg"
+        }
+        ,
+        {
+            "id": 17,
+            "title": "Coolwallet",
+            "picture": "coolwallet.jpg"
+        }
+        ,
+        {
+            "id": 18,
+            "title": "Coinomi",
+            "picture": "coinomi.jpg"
+        }
+        ,
+        {
+            "id": 19,
+            "title": "Cybavowallet",
+            "picture": "cybavowallet.jpg"
+        }
+        ,
+        {
+            "id": 20,
+            "title": "D'CENT Wallet",
+            "picture": "DCENTWallet.jpg"
+        },
+        {
+            "id": 21,
+            "title": "Eidoo",
+            "picture": "eidoo.jpg"
+        },
+        {
+            "id": 22,
+            "title": "Alpha Wallet",
+            "picture": "alphawallet.jpg"
+        },
+        {
+            "id": 23,
+            "title": "Alice",
+            "picture": "alice.jpg"
+        },
+        {
+            "id": 24,
+            "title": "Loopring Wallet",
+            "picture": "loopringwallet.jpg"
+        },
+        {
+            "id": 25,
+            "title": "Solana",
+            "picture": "Solana.jpg"
+        },
+        {
+            "id": 26,
+            "title": "Nash",
+            "picture": "Nash.jpg"
+        }
+        ,
+        {
+            "id": 27,
+            "title": "Tokenary",
+            "picture": "tokenary.jpg"
+        }
+        ,
+        {
+            "id": 28,
+            "title": "Equal",
+            "picture": "equal.jpg"
+        }
+        ,
+        {
+            "id": 29,
+            "title": "Ellipal",
+            "picture": "ellipal.jpg"
+        }
+        ,
+        {
+            "id": 30,
+            "title": "Argent",
+            "picture": "argent.jpg"
+        },
+        {
+            "id": 31,
+            "title": "Torus",
+            "picture": "torus.jpg"
+        }
+        ,
+        {
+            "id": 32,
+            "title": "Pillar",
+            "picture": "pillar.jpg"
+        }
+        ,
+        {
+            "id": 33,
+            "title": "Infinity Wallet",
+            "picture": "infinitywallet.jpg"
+        }
+        ,
+        {
+            "id": 34,
+            "title": "Infinito",
+            "picture": "infinito.jpg"
+        }
+        ,
+        {
+            "id": 35,
+            "title": "KEYRING PRO",
+            "picture": "KEYRINGPRO.jpg"
+        }
+        ,
+        {
+            "id": 36,
+            "title": "MathWallet",
+            "picture": "MathWallet.jpg"
+        }
+        ,
+        {
+            "id": 37,
+            "title": "Maiar",
+            "picture": "maiar.jpg"
+        }
+        ,
+        {
+            "id": 38,
+            "title": "LedgerLive",
+            "picture": "LedgerLive.jpg"
+        }
+        ,
+        {
+            "id": 39,
+            "title": "ONTO",
+            "picture": "ONTO.jpg"
+        }
+        ,
+        {
+            "id": 40,
+            "title": "Token Pocket",
+            "picture": "TokenPocket.jpg"
+        }
+        ,
+        {
+            "id": 41,
+            "title": "Walleth",
+            "picture": "Walleth.jpg"
+        }
+        ,
+        {
+            "id": 42,
+            "title": "Trust Vault",
+            "picture": "TrustVault.jpg"
+        }
+        ,
+        {
+            "id": 43,
+            "title": "Mkey",
+            "picture": "Mkey.jpg"
+        }
+        ,
+        {
+            "id": 44,
+            "title": "GridPlus",
+            "picture": "GridPlus.jpg"
+        }
+        ,
+        {
+            "id": 44,
+            "title": "Midas",
+            "picture": "Midas.jpg"
+        }
+    ]
+}
