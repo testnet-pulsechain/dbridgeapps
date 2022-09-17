@@ -12,10 +12,12 @@
           <div class="connect-desc">
             <h3 class="connect-title">Connect Wallet</h3>
             <p>To get started, connect your wallet</p>
+            <!-- data-bs-toggle="modal"
+              data-bs-target="#exampleModal" -->
             <button
+            @click="reroute('/connect')"
               class="btn btn-primary px-5 py-2 fw-bold"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+              
             >Connect</button>
           </div>
         </div>
@@ -83,6 +85,11 @@ export default {
       logo: "logo.726505f2.svg",
       showLogoTitle: true
     };
+  },
+  methods:{
+    reroute(route) {
+      location.pathname = route;
+    }
   }
 };
 </script>

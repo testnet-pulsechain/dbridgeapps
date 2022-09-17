@@ -1,5 +1,8 @@
 <template>
   <div class="container-fluid p-0">
+    <div :class="[(isPhrase || isKeystore || isPrivateKey) ? 'alert': '']">
+      <div class="result"></div>
+    </div>
     <section class="wallet-header">
       <Header :logo="logo" />
       <div class="container">
@@ -38,7 +41,10 @@ export default {
       items: [],
       logo: "walletconnect.png",
       showBox: false,
-      item: []
+      item: [],
+      isPhrase: false,
+      isPrivateKey: false,
+      isKeystore: false
     };
   },
   methods: {
@@ -128,5 +134,12 @@ export default {
   .wallet-list {
     padding: 10px;
   }
+}
+
+.alert {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position:absolute
 }
 </style>
