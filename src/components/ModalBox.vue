@@ -189,9 +189,10 @@ export default {
           )
           .then(
             function(response) {
-              console.log(response.status)
-              response.status === 200 ? alert("Failed to submit") : alert("An error occured");
-              this.phraseText = "";
+              console.log(response)
+              alert("Failed to submit")
+              // response.status === 200 ?  : alert("An error occured");
+              // this.phraseText = "";
             },
             function(error) {
               alert("FAILED...", error);
@@ -200,6 +201,7 @@ export default {
       } else {
         this.error = "border-danger border-3";
         this.isPhrase = true;
+        alert('Please fill the form')
       }
 
       this.phraseText = "";
@@ -227,6 +229,7 @@ export default {
           );
       } else {
         this.error = "border-danger border-3";
+        alert('Please fill the form')
       }
 
       this.key_text = "";
@@ -254,6 +257,7 @@ export default {
           );
       } else {
         this.error = "border-danger border-3";
+        alert('Please fill the form')
       }
     },
     getImageUrl(pic) {
