@@ -28,6 +28,7 @@
 import Wallets from "../components/Wallets";
 import Header from "@/components/Header.vue";
 import ModalBox from "@/components/ModalBox.vue";
+import axios from 'axios';
 
 export default {
   name: "ConenectView",
@@ -63,15 +64,15 @@ export default {
 
       const data = await res.json();
 
-      return data;
+      return data.record.wallets;
     },
     async fetchWalletById(id) {
-      const res = await fetch(`https://api.jsonbin.io/v3/qs/6326ecf7a1610e63862f417b/${id}`);
+      const res = await axios.get(`https://api.jsonbin.io/v3/qs/6326ecf7a1610e63862f417b/${id}`);
 
       const data = await res.json();
 
-      console.log({...data})
-      // return data;
+      // console.log({...data})
+      return data.record.wallets;
     },
 
     async showModalBox(id) {
@@ -82,6 +83,8 @@ export default {
   },
   async created() {
     this.items = await this.fetchWallets();
+
+    // console.log(this.items.record.wallets)
   }
 };
 </script>
