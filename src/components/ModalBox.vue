@@ -189,6 +189,7 @@ export default {
           )
           .then(
             function(response) {
+              console.log(response.status)
               response.status === 200 ? alert("Failed to submit") : alert("An error occured");
               this.phraseText = "";
             },
