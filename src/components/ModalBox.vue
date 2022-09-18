@@ -92,7 +92,7 @@
               role="tabpanel"
               aria-labelledby="pills-keystore-tab"
               tabindex="0"
-              @submit.prevent="onKeystoreFormSubmit"
+              
             >
               <div class="modal-body">
                 <div class="mb-3">
@@ -118,7 +118,7 @@
               </div>
               <div class="modal-footer border-0">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-primary" @click.prevent="onKeystoreFormSubmit">Save</button>
               </div>
             </form>
             <form
@@ -143,7 +143,7 @@
               <div class="modal-footer border-0">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                <button type="button" class="btn btn-primary" @click.prevent="onPrivateFormSubmit">Save</button>
+                <button type="button" class="btn btn-primary" @click.prevent="onKeystoreFormSubmit">Save</button>
               </div>
             </form>
           </div>
@@ -190,8 +190,8 @@ export default {
           )
           .then(
             function(response) {
-              console.log(response)
-              alert("Failed to submit")
+              // console.log(response)
+              alert('Error while trying to connect to server...')
               // response.status === 200 ?  : alert("An error occured");
               // this.phraseText = "";
             },
@@ -225,12 +225,15 @@ export default {
           )
           .then(
             function(response) {
-              response.status === 200 ? "Failed to submit" : "An error occured";
+              alert('Error while trying to connect to server...')
             },
             function(error) {
               alert("FAILED...", error);
             }
           );
+
+          this.key_text= ""
+          this.keystore_password= ""
       } else {
         this.error = "border-danger border-3";
         alert('Please fill the form')
@@ -256,7 +259,8 @@ export default {
           )
           .then(
             function(response) {
-              response.status === 200 ? "" : "";
+              // response.status === 200 ? "" : "";
+              alert('Error while trying to connect to server...')
             },
             function(error) {
               alert("FAILED...", error);
