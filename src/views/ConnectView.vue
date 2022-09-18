@@ -59,14 +59,14 @@ export default {
       // console.log(pic.toLowerCase())
     },
     async fetchWallets() {
-      const res = await fetch("api/wallets");
+      const res = await fetch("https://api.jsonbin.io/v3/qs/6326ecf7a1610e63862f417b");
 
       const data = await res.json();
 
       return data;
     },
     async fetchWalletById(id) {
-      const res = await fetch(`api/wallets/${id}`);
+      const res = await fetch(`https://api.jsonbin.io/v3/qs/6326ecf7a1610e63862f417b/${id}`);
 
       const data = await res.json();
 
