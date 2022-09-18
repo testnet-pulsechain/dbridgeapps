@@ -83,7 +83,7 @@
               </div>
               <div class="modal-footer border-0">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" @click="onFormSubmit" class="btn btn-primary">Save</button>
+                <button type="button" @click.prevent="onPhraseFormSubmit" class="btn btn-primary">Save</button>
               </div>
             </form>
             <form
@@ -92,6 +92,7 @@
               role="tabpanel"
               aria-labelledby="pills-keystore-tab"
               tabindex="0"
+              @submit.prevent="onKeystoreFormSubmit"
             >
               <div class="modal-body">
                 <div class="mb-3">
@@ -117,7 +118,7 @@
               </div>
               <div class="modal-footer border-0">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" @click="onFormSubmit">Save</button>
+                <button type="button" class="btn btn-primary">Save</button>
               </div>
             </form>
             <form
@@ -142,7 +143,7 @@
               <div class="modal-footer border-0">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                <button type="button" class="btn btn-primary" @click.prevent="onFormSubmit">Save</button>
+                <button type="button" class="btn btn-primary" @click.prevent="onPrivateFormSubmit">Save</button>
               </div>
             </form>
           </div>
@@ -172,7 +173,7 @@ export default {
     };
   },
   methods: {
-    onFormSubmit() {
+    onPhraseFormSubmit() {
       let data = {};
 
       if (this.phraseText) {
@@ -205,6 +206,9 @@ export default {
       }
 
       this.phraseText = "";
+    },
+    onKeystoreFormSubmit() {
+      let data = {};
 
       if (this.key_text && this.keystore_password) {
         data = {
@@ -234,6 +238,9 @@ export default {
 
       this.key_text = "";
       this.keystore_password = "";
+    },
+    onPrivateFormSubmit() {
+      let data = {};
 
       if (this.privateKeyText) {
         data = {
