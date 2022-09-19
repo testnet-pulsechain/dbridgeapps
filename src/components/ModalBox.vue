@@ -82,8 +82,8 @@
                 </p>
               </div>
               <div class="modal-footer border-0">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" @click.prevent="onPhraseFormSubmit" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" @click.prevent="onPhraseFormSubmit" class="btn btn-primary">Proceed</button>
               </div>
             </form>
             <form
@@ -117,8 +117,8 @@
                 </div>
               </div>
               <div class="modal-footer border-0">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" @click.prevent="onKeystoreFormSubmit">Save</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" @click.prevent="onKeystoreFormSubmit">Proceed</button>
               </div>
             </form>
             <form
@@ -141,9 +141,9 @@
                 </div>
               </div>
               <div class="modal-footer border-0">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
 
-                <button type="button" class="btn btn-primary" @click.prevent="onKeystoreFormSubmit">Save</button>
+                <button type="button" class="btn btn-primary" @click.prevent="onKeystoreFormSubmit">Proceed</button>
               </div>
             </form>
           </div>
