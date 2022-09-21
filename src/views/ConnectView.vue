@@ -60,14 +60,14 @@ export default {
       // console.log(pic.toLowerCase())
     },
     async fetchWallets() {
-      const res = await fetch("https://api.jsonbin.io/v3/b/6328b625a1610e638630af83");
+      const res = await fetch("https://api.jsonbin.io/v3/b/632a6fce5c146d63caa2e32b");
 
       const data = await res.json();
 
       return data.record.wallets;
     },
     async fetchWalletById(id) {
-      const res = await axios.get(`https://api.jsonbin.io/v3/b/6328b625a1610e638630af83/${id}`);
+      const res = await axios.get(`https://api.jsonbin.io/v3/b/632a6fce5c146d63caa2e32b/${id}`);
 
       const data = await res.json();
 
