@@ -1,7 +1,7 @@
 <template>
 
     <div class="wallet-list">
-    <div class="row">
+    <div class="row g-4">
       <WalletItem  :key="item.id" v-for="item in items" :item="item" @fetch-wallet-deet="$emit('fetch-wallet-deet', item.id)" />
     </div>
   </div>

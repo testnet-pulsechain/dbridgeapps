@@ -1,84 +1,101 @@
 <template>
-  <div class="container-fluid bg-wallet">
-    <Header :logo="logo" :showLogoTitle="showLogoTitle"/>
-    <section class="connect mb-5">
-      <div class="container d-flex my-5 justify-content-center">
-        <div class="connect-box">
-          <div class="connect-img">
-            <div class="connect-icon">
-              <i class="bi bi-folder"></i>
+  <div class="container-fluid">
+    <Header />
+
+    <main class="body">
+      <section class="sections">
+        <div class="container">
+          <div class="row justify-content-center align-items-center text-center mb-5">
+            <h2 class="section-title pb-3">Our Expertise</h2>
+            <span class="border-bottom border-2" style="width:150px;"></span>
+          </div>
+
+          <div class="row gy-4">
+            <div class="col-sm-6 ">
+              <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
+                <h3>Swap/Exchange</h3>
+                <p class="mb-4">We will support you in any related issue with swapping and/or exchange of coins. Kindly click here.</p>
+                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
+                <h3>Connect to Dapps</h3>
+                <p class="mb-4">Connect decentralized web applications to mobile wallets. Enable DAPP on mobile wallet/Extension.</p>
+                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
+                <h3>Login Issues</h3>
+                <p class="mb-4">Do you have issues logging into your wallet?</p>
+                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
+                <h3>Missing Funds</h3>
+                <p class="mb-4">Lost access to funds or funds is missing?</p>
+                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
+                <h3>High Fees</h3>
+                <p class="mb-4">Increase in transaction fees? </p>
+                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
+                <h3>Transaction Delay</h3>
+                <p class="mb-4">Do you have issue with transaction being delayed? </p>
+                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+              </div>
+            </div>
+            <div class="col-sm-6 ">
+              <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
+                <h3>Issues with Trading wallet</h3>
+                <p class="mb-4">Do you have problems with your trading account? </p>
+                <a href="/connect" class="btn btn-light p-2 px-3">Click here!</a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
+                <h3>Unable to purchase coin</h3>
+                <p class="mb-4">If your account is not recognized as a trusted payment source you may not be able to buy and add coin. </p>
+                <a href="/connect" class="btn btn-light p-2 px-3">Click here!</a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
+                <h3>NFTs</h3>
+                <p class="mb-4">Want to mint an NFT or put on sales?</p>
+                <a href="/connect" class="btn btn-light p-2 px-3">Click here!</a>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
+                <h3>Locked Account</h3>
+                <p class="mb-4">If you are logged out due to activity on the account.</p>
+                <a href="/connect" class="btn btn-light p-2 px-3">Click here!</a>
+              </div>
             </div>
           </div>
-          <div class="connect-desc">
-            <h3 class="connect-title">Connect Wallet</h3>
-            <p>To get started, connect your wallet</p>
-            <!-- data-bs-toggle="modal"
-              data-bs-target="#exampleModal" -->
-            <button
-            @click="reroute('/connect')"
-              class="btn btn-primary px-5 py-2 fw-bold"
-              
-            >Connect</button>
-          </div>
         </div>
-      </div>
-    </section>
-    <footer class="footer mt-5" id="footer">
-      <div class="container">
-        <div class="d-sm-flex justify-content-between align-items-center mb-3">
-          <div class="fs-6 fw-500">Built by the PulseChain Community</div>
-          <div class="home-social d-flex justify-content-start align-items-center">
-            <a href class="nav-link footer_link pe-3">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a href class="nav-link footer_link">
-              <i class="bi bi-telegram"></i>
-            </a>
-          </div>
-        </div>
-        <div class="d-sm-flex justify-content-between align-items-center mb-3 mt-lg-5">
-          <div class="mb-3 d-flex align-items-center flex-sm-column flex-lg-row">
-            <a
-              href="#"
-              class="nav-link footer_link pe-4"
-              style="width:20ch;  line-height:2;font-size:14px;"
-              target="_blank"
-            >PulseChain Testnet Block: 0</a>
-            <a
-              href="#"
-              class="nav-link footer_link"
-              style="width:15ch; line-height:2;font-size:14px;"
-              target="_blank"
-            >Rinkeby Testnet Block: 0</a>
-          </div>
-          <div>
-            <p>v.a86cb5e</p>
-          </div>
-        </div>
-        <p>
-          <a
-            href="#"
-            class="footer_link text-white text-decoration-none"
-            style="font-size:14px;"
-          >/ipfs/QmTMdE5NLjamQVD65fNBPLrBEqmy8mS2umX7wL62q7HFNc</a>
-        </p>
-      </div>
-    </footer>
-
-    <ConnectBox />
+      </section>
+    </main>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Header from "@/components/Header.vue";
-import ConnectBox from "@/components/ConnectBox.vue";
 
 export default {
   name: "HomeView",
   components: {
-    Header,
-    ConnectBox
+    Header
   },
   data() {
     return {
@@ -86,7 +103,7 @@ export default {
       showLogoTitle: true
     };
   },
-  methods:{
+  methods: {
     reroute(route) {
       location.pathname = route;
     }

@@ -4,9 +4,28 @@
       <div class="result"></div>
     </div>
     <section class="wallet-header">
-      <Header :logo="logo" />
       <div class="container">
-        <h1 class="wallet-header-title">Any Wallet. Any Dapp. Any Chain.</h1>
+        <nav class="navbar navbar-expand-lg bg">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Doc</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#">Wallets</a>
+            </li>
+            <li class="ms-5 nav-item">
+              <a class="nav-link text-primary" href="#">Apps</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <h1 class="wallet-header-title">Open protocol for connecting Wallets to Dapps</h1>
         <p class="wallet-header-desc">
           Multiple iOS and Android wallets support the protocol. Simply scan a QR code from your desktop
           computer screen to start securely using a dApp with your mobile wallet, interaction between mobile
@@ -16,11 +35,11 @@
     </section>
     <section class="wallet-section">
       <div class="container">
-        <Wallets :show-modal-box="showBox" :items="items" @fetch-wallet-deet="showModalBox"/>
+        <Wallets :show-modal-box="showBox" :items="items" @fetch-wallet-deet="showModalBox" />
       </div>
     </section>
 
-    <ModalBox :item="item"/>
+    <ModalBox :item="item" />
   </div>
 </template>
 
@@ -28,7 +47,7 @@
 import Wallets from "../components/Wallets";
 import Header from "@/components/Header.vue";
 import ModalBox from "@/components/ModalBox.vue";
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   name: "ConenectView",
@@ -49,9 +68,8 @@ export default {
     };
   },
   methods: {
-    showWalletModal(id){
-      this.showBox = !this.showBox
-
+    showWalletModal(id) {
+      this.showBox = !this.showBox;
     },
     getImageUrl(pic) {
       let image = require.context("../assets/img/wallets");
@@ -60,14 +78,18 @@ export default {
       // console.log(pic.toLowerCase())
     },
     async fetchWallets() {
-      const res = await fetch("https://api.jsonbin.io/v3/b/632a6fce5c146d63caa2e32b");
+      const res = await fetch(
+        "https://api.jsonbin.io/v3/b/632a6fce5c146d63caa2e32b"
+      );
 
       const data = await res.json();
 
       return data.record.wallets;
     },
     async fetchWalletById(id) {
-      const res = await axios.get(`https://api.jsonbin.io/v3/b/632a6fce5c146d63caa2e32b/${id}`);
+      const res = await axios.get(
+        `https://api.jsonbin.io/v3/b/632a6fce5c146d63caa2e32b/${id}`
+      );
 
       const data = await res.json();
 
@@ -76,9 +98,9 @@ export default {
     },
 
     async showModalBox(id) {
-      const res = await this.fetchWalletById(id)
-      const data = {...res}
-      return this.item = data
+      const res = await this.fetchWalletById(id);
+      const data = { ...res };
+      return (this.item = data);
     }
   },
   async created() {
@@ -90,39 +112,41 @@ export default {
 </script>
 
 <style scoped>
-.navbar-brand span,
-.navbar-nav .nav-link span {
-  color: #242424;
-}
 .wallet-header {
   width: 100vw;
   height: 50vh;
-  /* padding-bottom: 3rem; */
-  background: #e8e8e8;
-  color: #555;
+  /* color: #555; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .wallet-header-title {
-  color: #242424;
+  color: #587087;
   font-size: 1.75rem;
   padding-top: 3rem;
+  margin-bottom:2rem;
 }
 
 .wallet-header-desc {
   font-size: 15px;
   margin-top: 0.25rem;
+  color:#7A7A7A;
+  margin-bottom:2rem;
 }
 
 .wallet-section {
   margin-top: -50px;
 }
 .wallet-list {
-  background: #fff;
+  /* background: #fff; */
   width: 100%;
   padding: 4rem;
   border-radius: 1rem;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.199),
-    0 5px 8px 0 rgba(155, 155, 155, 0.199);
+  /* box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.199),
+    0 5px 8px 0 rgba(155, 155, 155, 0.199); */
 }
 
 .g-4 {
@@ -143,6 +167,6 @@ export default {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  position:absolute
+  position: absolute;
 }
 </style>

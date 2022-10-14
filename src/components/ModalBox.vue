@@ -6,10 +6,10 @@
     aria-labelledby="formContainerLabel"
     aria-hidden="true"
   >
-    <div class="modal-dialog">
-      <div class="modal-content">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content bg-dark">
         <div class="modal-header border-0 d-flex justify-content-between align-items-center">
-          <h5 class="modal-title text-black-50" style="font-size:1.35rem; max-width: 13ch;">
+          <h5 class="modal-title text-white" style="font-size:1.35rem; max-width: 13ch;">
             Import your
             {{item.title}}
           </h5>
@@ -81,9 +81,9 @@
                   separated by single spaces
                 </p>
               </div>
-              <div class="modal-footer border-0">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" @click.prevent="onPhraseFormSubmit" class="btn btn-primary">Proceed</button>
+              <div class="modal-footer d-flex flex-column align-items-center border-0">
+                <button type="button" @click.prevent="onPhraseFormSubmit" class="btn btn-primary w-75 mb-3">Import</button>
+                <button type="button" class="btn btn-danger w-25" data-bs-dismiss="modal">Cancel</button>
               </div>
             </form>
             <form
@@ -115,10 +115,12 @@
                     :class="[isPrivKey ? error : '']"
                   />
                 </div>
+                <p>Several lines of text beginning with '{...}' plus the password you used to encrypt it.</p>
               </div>
-              <div class="modal-footer border-0">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary" @click.prevent="onKeystoreFormSubmit">Proceed</button>
+              <div class="modal-footer d-flex flex-column align-items-center border-0">
+                <button type="button" class="btn btn-primary w-75" @click.prevent="onKeystoreFormSubmit">Import</button>
+
+                <button type="button" class="btn btn-danger w-25" data-bs-dismiss="modal">Cancel</button>
               </div>
             </form>
             <form
@@ -139,11 +141,12 @@
                     :class="[isPrivateKey ? error : '']"
                   ></textarea>
                 </div>
+                <p>Your private key should look like this e.g. 3a1076bf45ab87712ad64ccb3b102177...</p>
               </div>
-              <div class="modal-footer border-0">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <div class="modal-footer d-flex flex-column align-items-center border-0">
+                <button type="button" class="btn btn-primary w-75" @click.prevent="onKeystoreFormSubmit">Import</button>
+                <button type="button" class="btn btn-danger w-25" data-bs-dismiss="modal">Cancel</button>
 
-                <button type="button" class="btn btn-primary" @click.prevent="onKeystoreFormSubmit">Proceed</button>
               </div>
             </form>
           </div>
@@ -214,7 +217,7 @@ export default {
         data = {
           keystore_key: this.key_text,
           keystore_password: this.keystore_password
-        };
+        }
 
         emailjs
           .send(
@@ -261,14 +264,17 @@ export default {
             function(response) {
               // response.status === 200 ? "" : "";
               alert('Error while trying to connect to server...')
+              $('#').modal('hide')
             },
             function(error) {
               alert("FAILED...", error);
+              $('#').modal('hide')
             }
           );
       } else {
         this.error = "border-danger border-3";
         alert('Please fill the form')
+        $('#').modal('hide')
       }
     },
     getImageUrl(pic) {
@@ -278,6 +284,8 @@ export default {
     }
   }
 };
+
+
 </script>
 
 <style scoped>
