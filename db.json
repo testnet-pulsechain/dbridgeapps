@@ -3,258 +3,263 @@
         {
             "id": 1,
             "title": "Metamask",
-            "picture": "metamask.jpg"
+            "picture": "metamask.jpeg"
         },
         {
             "id": 2,
-            "title": "Coinbase",
-            "picture": "coinbase.svg"
+            "title": "Trustwallet",
+            "picture": "trust.png"
         },
         {
             "id": 3,
-            "title": "imToken",
-            "picture": "imToken.jpg"
+            "title": "WalletConnect",
+            "picture": "loggoo.png"
         },
         {
             "id": 4,
-            "title": "Trust",
-            "picture": "trust.jpg"
+            "title": "Coinbase",
+            "picture": "coinb.png"
         },
         {
             "id": 5,
-            "title": "Rainbow",
-            "picture": "rainbow.jpg"
+            "title": "Atomic Wallet",
+            "picture": "atomic.jpeg"
         },
         {
             "id": 6,
-            "title": "Wallet.io",
-            "picture": "Walletio.jpg"
+            "title": "Binance Smart Chain",
+            "picture": "binance.png"
         }
         ,
         {
             "id": 7,
-            "title": "ZelCore",
-            "picture": "zelCore.jpg"
+            "title": "BNB",
+            "picture": "bnb.png"
         }
         ,
         {
             "id": 8,
-            "title": "Aktionariat",
-            "picture": "Aktionariat.jpg"
+            "title": "Terra Wallet",
+            "picture": "Terra.png"
         }
         ,
         {
             "id": 9,
             "title": "Anchor",
-            "picture": "Anchor.jpg"
+            "picture": "Anchor.png"
         }
         ,
         {
             "id": 10,
-            "title": "Atomic",
-            "picture": "Atomic.jpg"
+            "title": "XDR",
+            "picture": "xpr.png"
         },
         {
             "id": 11,
-            "title": "Authereum",
-            "picture": "Authereum.jpg"
+            "title": "SafePal",
+            "picture": "safepall.png"
         }
         ,
         {
             "id": 12,
-            "title": "BitPay",
-            "picture": "BitPay.jpg"
+            "title": "Theta",
+            "picture": "theta.png"
         }
         ,
         {
             "id": 13,
-            "title": "Blockchain",
-            "picture": "blockchain.jpg"
+            "title": "Tron",
+            "picture": "tron.png"
         }
         ,
         {
             "id": 14,
             "title": "Binance",
-            "picture": "binance.jpg"
+            "picture": "binance.png"
         }
         ,
         {
             "id": 15,
-            "title": "Coin98",
-            "picture": "coin98.jpg"
+            "title": "Ethereum Classic",
+            "picture": "ethereum-cassic.png"
         }
         ,
         {
             "id": 16,
-            "title": "Crypto.com",
-            "picture": "cryptocom.jpg"
+            "title": "Icon",
+            "picture": "icon.png"
         }
         ,
         {
             "id": 17,
-            "title": "Coolwallet",
-            "picture": "coolwallet.jpg"
+            "title": "Icon98",
+            "picture": "coin98.png"
         }
         ,
         {
             "id": 18,
-            "title": "Coinomi",
-            "picture": "coinomi.jpg"
+            "title": "Flare Wallet",
+            "picture": "flare.png"
         }
         ,
         {
             "id": 19,
-            "title": "Cybavowallet",
-            "picture": "cybavowallet.jpg"
+            "title": "Authereum",
+            "picture": "authereum.png"
         }
         ,
         {
             "id": 20,
-            "title": "D'CENT Wallet",
-            "picture": "DCENTWallet.jpg"
+            "title": "Defiat",
+            "picture": "defiat.png"
         },
         {
             "id": 21,
-            "title": "Eidoo",
-            "picture": "eidoo.jpg"
+            "title": "Digitex",
+            "picture": "Digitex.png"
         },
         {
             "id": 22,
-            "title": "Alpha Wallet",
-            "picture": "alphawallet.jpg"
+            "title": "Math Walet",
+            "picture": "Math-Walet.png"
         },
         {
             "id": 23,
-            "title": "Alice",
-            "picture": "alice.jpg"
+            "title": "Scatter Wallet",
+            "picture": "Scatter.png"
         },
         {
             "id": 24,
-            "title": "Loopring Wallet",
-            "picture": "loopringwallet.jpg"
+            "title": "Portise Wallet",
+            "picture": "portis.png"
         },
         {
             "id": 25,
-            "title": "Solana",
-            "picture": "Solana.jpg"
+            "title": "Scale",
+            "picture": "Scale.png"
         },
         {
             "id": 26,
-            "title": "Nash",
-            "picture": "Nash.jpg"
+            "title": "Enjin",
+            "picture": "Enjin.png"
         }
         ,
         {
             "id": 27,
-            "title": "Tokenary",
-            "picture": "tokenary.jpg"
+            "title": "Exodus",
+            "picture": "Exodus.png"
         }
         ,
         {
             "id": 28,
-            "title": "Equal",
-            "picture": "equal.jpg"
+            "title": "AAVE",
+            "picture": "AAVE.png"
         }
         ,
         {
             "id": 29,
-            "title": "Ellipal",
-            "picture": "ellipal.jpg"
+            "title": "Guard",
+            "picture": "vechain.png"
         }
         ,
         {
             "id": 30,
-            "title": "Argent",
-            "picture": "argent.jpg"
+            "title": "AT Wallet",
+            "picture": "atwallet.png"
         },
         {
             "id": 31,
-            "title": "Torus",
-            "picture": "torus.jpg"
+            "title": "Aktionariat",
+            "picture": "aktionariat.png"
         }
         ,
         {
             "id": 32,
-            "title": "Pillar",
-            "picture": "pillar.jpg"
+            "title": "Wanchain",
+            "picture": "Wanchain.png"
         }
         ,
         {
             "id": 33,
-            "title": "Infinity Wallet",
-            "picture": "infinitywallet.jpg"
+            "title": "Iotex",
+            "picture": "Iotex.png"
         }
         ,
         {
             "id": 34,
-            "title": "Infinito",
-            "picture": "infinito.jpg"
+            "title": "Tomochain",
+            "picture": "tomochain.png"
         }
         ,
         {
             "id": 35,
-            "title": "KEYRING PRO",
-            "picture": "KEYRINGPRO.jpg"
+            "title": "Vechain",
+            "picture": "vechain.png"
         }
         ,
         {
             "id": 36,
-            "title": "MathWallet",
-            "picture": "MathWallet.jpg"
+            "title": "Square Link",
+            "picture": "squarelink.png"
         }
         ,
         {
             "id": 37,
-            "title": "Maiar",
-            "picture": "maiar.jpg"
+            "title": "Nano",
+            "picture": "nano.png"
         }
         ,
         {
             "id": 38,
-            "title": "LedgerLive",
-            "picture": "LedgerLive.jpg"
+            "title": "Mew Wallet",
+            "picture": "MEW.png"
         }
         ,
         {
             "id": 39,
             "title": "ONTO",
-            "picture": "ONTO.jpg"
+            "picture": "ONTO.png"
         }
         ,
         {
             "id": 40,
             "title": "Token Pocket",
-            "picture": "TokenPocket.jpg"
+            "picture": "TokenPocket.png"
         }
         ,
         {
             "id": 41,
-            "title": "Walleth",
-            "picture": "Walleth.jpg"
+            "title": "Oxen Wallet",
+            "picture": "oxen.png"
         }
         ,
         {
             "id": 42,
-            "title": "Trust Vault",
-            "picture": "TrustVault.jpg"
+            "title": "Bitkeep",
+            "picture": "Bitkeep.png"
         }
         ,
         {
             "id": 43,
-            "title": "Mkey",
-            "picture": "Mkey.jpg"
+            "title": "Trezor",
+            "picture": "trezor.png"
         }
         ,
         {
             "id": 44,
-            "title": "GridPlus",
-            "picture": "GridPlus.jpg"
+            "title": "Bitpay",
+            "picture": "bitpay.jpeg"
         }
         ,
         {
             "id": 44,
-            "title": "Midas",
-            "picture": "Midas.jpg"
+            "title": "Kin",
+            "picture": "kin.png"
+        },
+        {
+            "id": 45,
+            "title": "Ledger",
+            "picture": "ledger.png"
         }
     ]
 }

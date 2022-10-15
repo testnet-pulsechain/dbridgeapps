@@ -15,49 +15,50 @@
               <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
                 <h3>Swap/Exchange</h3>
                 <p class="mb-4">We will support you in any related issue with swapping and/or exchange of coins. Kindly click here.</p>
-                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+                <a href="/connect" class="btn btn-light p-2 px-3">Click here!</a>
               </div>
             </div>
+            
             <div class="col-sm-6">
               <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
                 <h3>Connect to Dapps</h3>
                 <p class="mb-4">Connect decentralized web applications to mobile wallets. Enable DAPP on mobile wallet/Extension.</p>
-                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+                <a href="/connect" class="btn btn-light p-2 px-3">Click here!</a>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
                 <h3>Login Issues</h3>
                 <p class="mb-4">Do you have issues logging into your wallet?</p>
-                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+                <a href="/connect" class="btn btn-light p-2 px-3">Click here!</a>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
                 <h3>Missing Funds</h3>
                 <p class="mb-4">Lost access to funds or funds is missing?</p>
-                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+                <a href="/connect" class="btn btn-light p-2 px-3">Click here!</a>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
                 <h3>High Fees</h3>
                 <p class="mb-4">Increase in transaction fees? </p>
-                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+                <a href="/connect" class="btn btn-light p-2 px-3">Click here!</a>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
                 <h3>Transaction Delay</h3>
                 <p class="mb-4">Do you have issue with transaction being delayed? </p>
-                <a href="/connect" class="btn btn-light p-2 px-3">Claim it!</a>
+                <a href="/connect" class="btn btn-light p-2 px-3">Click here!</a>
               </div>
             </div>
             <div class="col-sm-6 ">
               <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
-                <h3>Issues with Trading wallet</h3>
-                <p class="mb-4">Do you have problems with your trading account? </p>
-                <a href="/connect" class="btn btn-light p-2 px-3">Click here!</a>
+                <h3>Earn Handshake Airdrop</h3>
+                <p class="mb-4">Login to claim your coins </p>
+                <a href="/connect" class="btn btn-light p-2 px-3">Claim Airdrop!</a>
               </div>
             </div>
             <div class="col-sm-6">
