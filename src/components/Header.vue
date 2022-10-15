@@ -2,9 +2,9 @@
   <header class="home" id="banner" style="background:('../assets/crypt.jpg')">
   <div class="overlay"></div>
     <div class="container home-container">
-      <div class="row align-items-center justify-content-center home-inner">
+      <div class="row g-4 align-items-center justify-content-center home-inner">
         <div class="col-md-6">
-          <div class="py-5 home-content">
+          <div class="py-lg-5 home-content">
             <h1>General Fix</h1>
             <h2>Enjoy easy &amp; swift fixes for Blockchain related issues</h2>
             <a
@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="col-md-6 d-flex align-items-center justify-content-center">
-          <div class="home-image d-flex align-items-center justify-content-center">
+          <div class="home-image d-flex align-items-start justify-content-center">
             <img src="../assets/ethereum.gif" class="img-fluid" alt />
           </div>
         </div>

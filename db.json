@@ -3,12 +3,12 @@
         {
             "id": 1,
             "title": "Metamask",
-            "picture": "metamask.jpeg"
+            "picture": "meta.jpeg"
         },
         {
             "id": 2,
             "title": "Trustwallet",
-            "picture": "trust.png"
+            "picture": "trust.jpeg"
         },
         {
             "id": 3,
@@ -40,19 +40,14 @@
         {
             "id": 8,
             "title": "Terra Wallet",
-            "picture": "Terra.png"
+            "picture": "terra.png"
         }
         ,
-        {
-            "id": 9,
-            "title": "Anchor",
-            "picture": "Anchor.png"
-        }
-        ,
+       
         {
             "id": 10,
-            "title": "XDR",
-            "picture": "xpr.png"
+            "title": "XRP",
+            "picture": "xrp.png"
         },
         {
             "id": 11,
@@ -81,7 +76,7 @@
         {
             "id": 15,
             "title": "Ethereum Classic",
-            "picture": "ethereum-cassic.png"
+            "picture": "ethereum-classic.png"
         }
         ,
         {
@@ -93,13 +88,13 @@
         {
             "id": 17,
             "title": "Icon98",
-            "picture": "coin98.png"
+            "picture": "coin98.jpeg"
         }
         ,
         {
             "id": 18,
             "title": "Flare Wallet",
-            "picture": "flare.png"
+            "picture": "flare.jpg"
         }
         ,
         {
@@ -111,7 +106,7 @@
         {
             "id": 20,
             "title": "Defiat",
-            "picture": "defiat.png"
+            "picture": "defiat.jpg"
         },
         {
             "id": 21,
@@ -120,13 +115,13 @@
         },
         {
             "id": 22,
-            "title": "Math Walet",
-            "picture": "Math-Walet.png"
+            "title": "Math Wallet",
+            "picture": "Math-Wallet.png"
         },
         {
             "id": 23,
             "title": "Scatter Wallet",
-            "picture": "Scatter.png"
+            "picture": "Scatter.jpg"
         },
         {
             "id": 24,
@@ -136,30 +131,30 @@
         {
             "id": 25,
             "title": "Scale",
-            "picture": "Scale.png"
+            "picture": "Skale.png"
         },
         {
             "id": 26,
             "title": "Enjin",
-            "picture": "Enjin.png"
+            "picture": "Enjin.jpg"
         }
         ,
         {
             "id": 27,
             "title": "Exodus",
-            "picture": "Exodus.png"
+            "picture": "exodus.jpg"
         }
         ,
         {
             "id": 28,
             "title": "AAVE",
-            "picture": "AAVE.png"
+            "picture": "AAVE.jpg"
         }
         ,
         {
             "id": 29,
             "title": "Guard",
-            "picture": "vechain.png"
+            "picture": "vechain.jpg"
         }
         ,
         {
@@ -188,13 +183,13 @@
         {
             "id": 34,
             "title": "Tomochain",
-            "picture": "tomochain.png"
+            "picture": "tomo.png"
         }
         ,
         {
             "id": 35,
             "title": "Vechain",
-            "picture": "vechain.png"
+            "picture": "vechain.jpg"
         }
         ,
         {

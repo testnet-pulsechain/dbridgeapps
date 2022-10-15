@@ -3,14 +3,14 @@
     <Header />
 
     <main class="body">
-      <section class="sections">
+      <section class="sections mt-5">
         <div class="container">
           <div class="row justify-content-center align-items-center text-center mb-5">
             <h2 class="section-title pb-3">Our Expertise</h2>
             <span class="border-bottom border-2" style="width:150px;"></span>
           </div>
 
-          <div class="row gy-4">
+          <div class="row g-4">
             <div class="col-sm-6 ">
               <div class="item p-5 d-flex flex-column align-items-center text-center border border-1 rounded-4 border-primary">
                 <h3>Swap/Exchange</h3>
