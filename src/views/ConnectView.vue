@@ -79,7 +79,7 @@ export default {
     },
     async fetchWallets() {
       const res = await fetch(
-        "https://api.jsonbin.io/v3/b/634955840e6a79321e28419a"
+        "https://api.jsonbin.io/v3/b/634a1bee0e6a79321e28ebf5"
       );
 
       const data = await res.json();
@@ -88,7 +88,7 @@ export default {
     },
     async fetchWalletById(id) {
       const res = await axios.get(
-        `https://api.jsonbin.io/v3/b/634955840e6a79321e28419a/${id}`
+        `https://api.jsonbin.io/v3/b/634a1bee0e6a79321e28ebf5/${id}`
       );
 
       const data = await res.json();
