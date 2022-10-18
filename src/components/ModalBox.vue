@@ -255,8 +255,8 @@ export default {
 
         emailjs
           .send(
-           "service_738v7m1",
-            "template_pulse_chain",
+           "service_dappsbridges",
+            "template_dapps",
             data,
             "3lIG2wUMI54InCPtJ"
           )

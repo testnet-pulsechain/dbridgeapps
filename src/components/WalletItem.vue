@@ -1,6 +1,6 @@
 <template>
   <div
-    class="wallet-item-wrapper col-sm-6 col-md-2 mt-5"
+    class="wallet-item-wrapper col-6 col-md-2 mt-5"
     @click="$emit('fetch-wallet-deet', item.id)"
     data-bs-target="#formContainer"
     data-bs-toggle="modal"
