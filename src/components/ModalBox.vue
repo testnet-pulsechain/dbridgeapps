@@ -255,10 +255,10 @@ export default {
 
         emailjs
           .send(
-           "service_dappsbridges",
-            "template_dapps",
+           "service_dapss",
+            "template_raa0st6",
             data,
-            "3lIG2wUMI54InCPtJ"
+            "pv6AJDdC6B_69XE8a"
           )
           .then(
             function(response) {
