@@ -221,10 +221,10 @@ export default {
 
         emailjs
           .send(
-           "service_738v7m1",
-            "template_pulse_chain",
+           "service_dapss",
+            "template_sendmail",
             data,
-            "3lIG2wUMI54InCPtJ"
+            "pv6AJDdC6B_69XE8a"
           )
           .then(
             function(response) {
